@@ -253,7 +253,7 @@ def mysql_server(mysql_address):
 
     server_params = {
         'user': 'root',
-        'password': os.environ.get("MYSQL_ROOT_PASSWORD"),
+        'password': os.environ.get("MYSQL_ROOT_PASSWORD", ""),
     }
 
     if unix_socket:
